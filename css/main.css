@@ -21,7 +21,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-span {
+.aussie_chef-container > span {
   width: 20px;
   background-color: #ffb200;
   border-radius: 25px;
@@ -30,7 +30,7 @@ span {
 }
 
 /* add a title of the chart */
-span[title]:after {
+.aussie_chef-container > span[title]:after {
   position: absolute;
   display: block;
   bottom: -25px;
@@ -39,7 +39,7 @@ span[title]:after {
   color: rgba(0, 0, 0, 0.364);
   content: attr(title);
 }
-p {
+.aussie_chef-title {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
