@@ -1,5 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aussie_chef {
+  width: 448px;
+  height: 452px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.282);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 25px 45px;
+  margin: 0 auto;
+ 
+}
+.aussie_chef-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+span {
+  width: 20px;
+  background-color: #ffb200;
+  border-radius: 25px;
+  animation: draw 1s ease-in-out;
+  position: relative;
+}
+
+/* add a title of the chart */
+span[title]:after {
+  position: absolute;
+  display: block;
+  bottom: -25px;
+  left: 4px;
+  font-size: small;
+  color: rgba(0, 0, 0, 0.364);
+  content: attr(title);
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+/* set the height of the chart  */
+.col_1 {
+  height: 279px;
+}
+
+.col_2 {
+  height: 188px;
+}
+.col_3 {
+  height: 236px;
+}
+.col_4 {
+  height: 118px;
+}
+.col_5 {
+  height: 167px;
+}
+.col_6 {
+  height: 319px;
+}
+.col_7 {
+  height: 253px;
+}
+.col_8 {
+  height: 157px;
+}
+.col_9 {
+  height: 249px;
+}
+.col_10 {
+  height: 125px;
+}
+.col_11 {
+  height: 208px;
+}
+.col_12 {
+  height: 269px;
+}
+
+/* Animation for chart */
+@keyframes draw {
+  0% {
+    height: 0;
+  }
 }
