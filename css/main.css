@@ -1,5 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.left_menu {
+  width: 96px;
+  min-height: 100%;
+}
+.left_menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  min-height: 100%;
+}
+.img-container,
+.firstLogo,
+.last_img-container {
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstLogo {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.515);
+}
+.last_img-container {
+  align-items: flex-end;
 }
