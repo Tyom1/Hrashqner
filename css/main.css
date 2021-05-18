@@ -1,12 +1,49 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .wrapper{
   background-color: #F2F2F2;
 }
+/* ========================================================================================Artashes Started */
+
+.wrapper_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 35px;
+}
+.user_container {
+  position: relative;
+}
+.user_container > img {
+  margin-left: 10px;
+}
+.greenCircle {
+  position: absolute;
+  top: 30px;
+  right: 175px;
+}
+.searchLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.wrapper_header-logo input {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+}
+.wrapper_header .plus {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+/* ========================================================================================Artashes Finished */
 /* ========================================================================================Laura Started */
 
 .left_menu {
@@ -145,6 +182,89 @@
     to {opacity: 1; }
 }
 /* ========================================================================================Mariam Finished */
+/* ========================================================================================Arman Started */
+.blue_box {
+  width: 940px;
+  height: 150px;
+  background-color: #4339f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blue_box_images {
+  position: relative;
+  right: 50px;
+  bottom: 15px;
+}
+
+.blue_box_description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blue_box_img1 {
+  position: absolute;
+  width: 50px;
+  left: 40px;
+  z-index: 98;
+  top: -2px;
+  height: 8px;
+}
+
+.blue_box_img2 {
+  position: absolute;
+  bottom: 11px;
+  top: 0;
+  left: 20px;
+  right: 0;
+  margin: auto;
+  z-index: 97;
+}
+
+.blue_box_img3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+  z-index: 99;
+  top: -5px;
+}
+
+.blue_box_img4 {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.blue_box_button {
+  width: 140px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #8a83f7;
+  outline: none;
+  border: none;
+  margin-top: 50px;
+  font-family: "DM Sans";
+  border-radius: 10px;
+}
+
+.blue_box_title {
+  font-family: "DM Sans";
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.blue_box_paragraph {
+  font-family: "DM Sans";
+  color: #ffffff;
+  font-size: 14px;
+}
+/* ========================================================================================Arman finished */
 /* ========================================================================================Arus Started */
 .aussie_chef {
   width: 448px;
@@ -232,42 +352,4 @@
     height: 0;
   }
 }
-/* ========================================================================================Arus Started */
-
-/* ========================================================================================Artashes Started */
-
-.wrapper_header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px 35px;
-}
-.user_container {
-    position: relative;
-}
-.user_container > img {
-    margin-left: 10px;
-}
-.greenCircle {
-    position: absolute;
-    top: 30px;
-    right: 175px;
-}
-.searchLabel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-.wrapper_header-logo input {
-    margin-left: 10px;
-    padding: 5px;
-    border: none;
-}
-.wrapper_header .plus {
-    position: absolute;
-    right: 14px;
-    top: 14px;
-}
-/* ========================================================================================Artashes Finished */
+/* ========================================================================================Arus finished */
