@@ -1,9 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #F2F2F2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.wrapper{
+  background-color: #F2F2F2;
+}
+/* ========================================================================================Laura Started */
+
+.left_menu {
+  width: 7%;
+  min-height: 100%;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.left_menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  min-height: 100%;
+}
+.img-container,
+.firstLogo,
+.last_img-container {
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+.firstLogo {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.515);
+}
+.last_img-container {
+  align-items: flex-end;
+}
+/* ========================================================================================Laura Finished */
 /* ========================================================================================Mariam Started */
 .single_minded div, .single_minded span { background-color: inherit; }
 
