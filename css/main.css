@@ -1,11 +1,188 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.wrapper{
+  background-color: #F2F2F2;
+}
+/* ========================================================================================Artashes Started */
+
+.wrapper_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 35px;
+}
+.user_container {
+  position: relative;
+}
+.user_container > img {
+  margin-left: 10px;
+}
+.greenCircle {
+  position: absolute;
+  top: 30px;
+  right: 175px;
+}
+.searchLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.wrapper_header-logo input {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+}
+.wrapper_header .plus {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+/* ========================================================================================Artashes Finished */
+/* ========================================================================================Laura Started */
+
+.left_menu {
+  width: 7%;
+  min-height: 100%;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.left_menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  min-height: 100%;
+}
+.img-container,
+.firstLogo,
+.last_img-container {
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+.firstLogo {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.515);
+}
+.last_img-container {
+  align-items: flex-end;
+}
+/* ========================================================================================Laura Finished */
+/* ========================================================================================Mariam Started */
+.single_minded div, .single_minded span { background-color: inherit; }
+
+.single_minded {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.single_minded .profile_info {
+    width: 30%;
+    padding: 10px;
+    background-color: #FFFFFF !important;
+    border-radius: 10px;
+}
+.single_minded .profile_info  .img {
+    width: 6vw;
+    height: 6vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.ava.profile_info > div.profile_image > div.img {
+    background-image: url('../img/profile-images/ava.svg'); 
+}
+.somon.profile_info > div.profile_image > div.img {
+    background-image: url('../img/profile-images/somon.svg'); 
+}
+.lilah.profile_info > div.profile_image > div.img {
+    background-image: url('../img/profile-images/liliah.svg'); 
+}
+.single_minded .profile_info .profile_image {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.single_minded .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.single_minded .dropdown {
+    position:absolute;
+    right: 0;
+    top: -10px;
+    font-size: 25px;
+    color: #bdb8b9;
+}
+.single_minded .profile_info .name {
+    font-weight: 500;
+    font-size: 22px;
+}
+.profile_info .loading_info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.profile_info .loader {
+    height: 10px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 15px;
+}
+.ava.profile_info  div.loader { background-color: #E2FBD7;}
+.somon.profile_info  div.loader  {background-color: #FFE5D3}
+.lilah.profile_info  div.loader  {background-color: #DAD7FE}
+
+.profile_info .loader .percent{
+    height: 10px;
+    border-radius: 15px;
+}
+
+.ava.profile_info  div.loader > div {background-color:#34B53A}
+
+.somon.profile_info  div.loader > div {background-color:#FF3A29}
+.lilah.profile_info  div.loader > div {background-color:#4339F2}
+
+.profile_info .loading_container {font-size: 14px;}
+
+.loader > div {
+    animation-iteration-count: 1;
+    animation: mymove 6s;
+}
+
+.ava.profile_info > div:nth-child(2) > div.loader > div {width: 50%;}
+.ava.profile_info > div:nth-child(3) > div.loader > div{ width: 37%;}
+.ava.profile_info > div:nth-child(4) > div.loader > div{ width: 57%;}
+
+.somon.profile_info > div:nth-child(2) > div.loader > div { width: 32%;}
+.somon.profile_info > div:nth-child(3) > div.loader > div{ width: 54%;}
+.somon.profile_info > div:nth-child(4) > div.loader > div{ width: 47%;}
+
+.lilah.profile_info > div:nth-child(2) > div.loader > div { width: 57%;}
+.lilah.profile_info > div:nth-child(3) > div.loader > div{ width: 44%;}
+.lilah.profile_info > div:nth-child(4) > div.loader > div{ width: 34%;}
+
+.loading_info .green {color: #34B53A;}
+.loading_info .red {color: #FF3A29;}
+.loading_info .purple {color: #4339F2;}
+
+
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1; }
+}
+/* ========================================================================================Mariam Finished */
+/* ========================================================================================Arman Started */
 .blue_box {
   width: 940px;
   height: 150px;
@@ -87,3 +264,92 @@
   color: #ffffff;
   font-size: 14px;
 }
+/* ========================================================================================Arman finished */
+/* ========================================================================================Arus Started */
+.aussie_chef {
+  width: 448px;
+  height: 452px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.282);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 25px 45px;
+  margin: 0 auto;
+ 
+}
+.aussie_chef-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.aussie_chef-container > span {
+  width: 20px;
+  background-color: #ffb200;
+  border-radius: 25px;
+  animation: draw 1s ease-in-out;
+  position: relative;
+}
+
+/* add a title of the chart */
+.aussie_chef-container > span[title]:after {
+  position: absolute;
+  display: block;
+  bottom: -25px;
+  left: 4px;
+  font-size: small;
+  color: rgba(0, 0, 0, 0.364);
+  content: attr(title);
+}
+.aussie_chef-title {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+.col_1 {
+  height: 279px;
+}
+
+.col_2 {
+  height: 188px;
+}
+.col_3 {
+  height: 236px;
+}
+.col_4 {
+  height: 118px;
+}
+.col_5 {
+  height: 167px;
+}
+.col_6 {
+  height: 319px;
+}
+.col_7 {
+  height: 253px;
+}
+.col_8 {
+  height: 157px;
+}
+.col_9 {
+  height: 249px;
+}
+.col_10 {
+  height: 125px;
+}
+.col_11 {
+  height: 208px;
+}
+.col_12 {
+  height: 269px;
+}
+
+/* Animation for chart */
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+/* ========================================================================================Arus finished */
