@@ -1,0 +1,481 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+}
+
+@import "fonts";
+// .webp div {background: url("../img/project5.webp") 0 0 no-repeat;}
+// =================================================================FONTS and WEBpCSS
+
+%imgslogo{
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans";
+}
+
+.wrapper{
+  background-color: #F2F2F2;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 0 0;
+}
+.right_part{
+  width: 90%;
+  & > .bottom_part{
+    display: flex;
+    justify-content: space-between;
+    & > .bottom_left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 65%;
+    }
+  }
+}
+/* ========================================================================================Laura Started */
+.left_menu {
+  width: 7%;
+  min-height: 100%;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: inline-block;
+  & > .left_menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    min-height: 100%;
+    & > div{
+      @extend %imgslogo;
+    }
+    & > .firstLogo {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.515);
+    }
+    & > .last_img-container {
+      align-items: flex-end;
+    }
+  }
+}
+/* ========================================================================================Laura Finished */
+/* ========================================================================================Artashes Started */
+.search_members{
+  & > .wrapper_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    &>.wrapper_header-logo {
+      &>.searchLabel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+  
+        &>input {
+          margin-left: 10px;
+          padding: 5px;
+          border: none;
+        }
+      }
+    }
+    &>.user_container {
+      position: relative;
+      &>img {
+        margin-left: 10px;
+      }
+      & .greenCircle {
+        position: absolute;
+        top: 30px;
+        right: 175px;
+      }
+      & .plus {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+      }
+    }
+  }
+}
+/* ========================================================================================Artashes Finished */
+
+/* ========================================================================================Mariam Started */
+.single_minded{
+  margin: 0 0 40px 0;
+  & > h1{
+    margin: 0 0 20px 0;
+  }
+  & > .single_members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    & >.profile_info {
+      // width: 30%;
+      padding: 10px;
+      background-color: #FFFFFF !important;
+      border-radius: 10px;
+      & > .profile_image{
+        display: flex;
+        align-items: center;
+        position: relative;  
+        & > .info{
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          & > .name{
+            font-weight: 500;
+            font-size: 22px;
+          }
+        }
+        & > .dropdown {
+          position:absolute;
+          right: 0;
+          top: -10px;
+          font-size: 25px;
+          color: #bdb8b9;
+        }
+        & .img {
+          width: 6vw;
+          height: 6vw;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      & .percent{
+        height: 10px;
+        border-radius: 15px;
+      }
+      & > .loading_container{
+        font-size: 14px;
+        margin: 10px 0;
+        & > .loading_info{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10px;
+        }
+        & > .loader{
+          height: 10px;
+          width: 100%;
+          margin: 5px 0;
+          border-radius: 15px;
+          & > .percent{
+            animation-iteration-count: 1;
+            animation: mymove 6s;
+          }
+        }
+      }  
+    }
+    & > .ava{
+      & > .profile_image{
+        & > .img{
+          background-image: url('../img/ava.svg');     
+        }
+      }
+      & > .loading_container{
+        & > .loading_info{
+          & > .green {
+            color: #34B53A;
+          }
+        } 
+      }
+      & div:nth-child(2) > div.loader > div {width: 50%;}
+      & div:nth-child(3) > div.loader > div{ width: 37%;}
+      & div:nth-child(4) > div.loader > div{ width: 57%;}
+      & .loader{ 
+        background-color: #E2FBD7;
+        & > .percent{
+            background-color:#34B53A;
+        }
+      }
+    }
+    & > .somon{
+      & > .profile_image{
+        & > .img{
+          background-image: url('../img/somon.svg');     
+        }
+      }
+      & > .loading_container{
+        & > .loading_info{
+          & > .red {
+            color: #FF3A29;
+          }
+        } 
+      }
+      & div:nth-child(2) > div.loader > div { width: 32%;}
+      & div:nth-child(3) > div.loader > div{ width: 54%;}
+      & div:nth-child(4) > div.loader > div{ width: 47%;}
+      & .loader{ 
+        background-color:#FFE5D3;
+        & > .percent{
+            background-color:#FF3A29;
+        }
+      }
+    }
+    & > .lilah{
+      & > .profile_image{
+        & > .img{
+          background-image: url('../img/lilah.svg');     
+        }
+      }
+      & > .loading_container{
+        & > .loading_info{
+          & > .purple {
+            color: #4339F2;;
+          }
+        } 
+      }
+      & div:nth-child(2) > div.loader > div { width: 57%;}
+      & div:nth-child(3) > div.loader > div{ width: 44%;}
+      & div:nth-child(4) > div.loader > div{ width: 34%;}
+      & .loader{ 
+        background-color:#DAD7FE;
+        & > .percent{
+            background-color:#4339F2;
+        }
+      }
+    }
+    @keyframes mymove {
+      from {opacity: 0;}
+      to {opacity: 1; }
+    }
+  }  
+}
+
+/* ========================================================================================Mariam Finished */
+/* ========================================================================================Arman Started */
+.blue_box {
+  width: 100%;
+  height: 150px;
+  background-color: #4339f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  &  .blue_box_images {
+    position: relative;
+    right: 15px;
+    bottom: 15px;
+    &  .blue_box_img1 {
+      position: absolute;
+      width: 50px;
+      left: 40px;
+      z-index: 98;
+      top: -2px;
+      height: 8px;
+    }
+    &  .blue_box_img2 {
+      position: absolute;
+      bottom: 11px;
+      top: 0;
+      left: 20px;
+      right: 0;
+      margin: auto;
+      z-index: 97;
+    }
+    &  .blue_box_img3 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 50px;
+      z-index: 99;
+      top: -5px;
+    }
+    &  .blue_box_img4 {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  &  .blue_box_description {
+    margin: 0 0 0 60px;
+    &  .blue_box_title {
+      color: #ffffff;
+      line-height: 29px;
+      font-size: 22px;
+    }
+    &  .blue_box_paragraph {
+      color: #ffffff;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+  &  .blue_box_button {
+    width: 140px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #8a83f7;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 7px 5px 0 #746b6a;
+    &:hover{
+      box-shadow: none;
+      transition: all ease-in 0.3s;
+    }
+  }
+}
+/* ========================================================================================Arman finished */
+/* ========================================================================================Arus Started */
+.aussie_chef {
+  width: 30%;
+  // height: 452px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 30px 10px;
+  margin: 0 0 20px 0;
+  & > .aussie_chef-title {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+  }
+  & > .aussie_chef-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    & > span{
+      width: 20px;
+      background-color: #ffb200;
+      border-radius: 25px;
+      animation: draw 1s ease-in-out;
+      position: relative;
+      &:after {
+        position: absolute;
+        display: block;
+        bottom: -25px;
+        left: 4px;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.364);
+        content: attr(title);
+      }
+    }
+    & > .col_1 {
+      height: 279px;
+    }
+    & > .col_2 {
+      height: 188px;
+    }
+    & > .col_3 {
+      height: 236px;
+    }
+    & > .col_4 {
+      height: 118px;
+    }
+    & > .col_5 {
+      height: 167px;
+    }
+    & > .col_6 {
+      height: 319px;
+    }
+    & > .col_7 {
+      height: 253px;
+    }
+    & > .col_8 {
+      height: 157px;
+    }
+    & > .col_9 {
+      height: 249px;
+    }
+    & > .col_10 {
+      height: 125px;
+    }
+    & > .col_11 {
+      height: 208px;
+    }
+    & > .col_12 {
+      height: 269px;
+    }
+  }
+  //Animation for chart
+  @keyframes draw {
+    0% {
+      height: 0;
+    }
+  }
+}
+
+/* ========================================================================================Arus finished */
+/* ========================================================================================Ani started */
+.canvas-section{
+    display: flex;
+    flex-direction: space-around;
+    & > .canvas-wrap {
+      position: relative;
+      width: 160px;
+      height: 200px;
+      background: #ffffff;
+      border-radius:14px;
+      padding: 0;
+      margin-right: 40px;
+      margin-bottom: 20px;
+      & > .canvas-label{
+        position: absolute;
+        font-size:18px;
+        font-weight: 500;
+        top: 10%;
+        left: 30%;  
+        }
+      & > span{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        color: #000;
+        &::after{
+          content: '%';          
+        }
+      }
+    }
+  }    
+/* ========================================================================================Ani finished */
+
+
+
+
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+@media (min-width: 481px) and (max-width: 767px){
+
+}
+@media (min-width: 320px) and (max-width: 480px){
+
+}
+
+
